@@ -1,25 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { MainNavbar } from './MainNavbar';
+import { MainHeader } from './MainHeader';
+import { MainArcticle } from './MainArcticle';
+import { MainSideBar } from './MainSideBar';
+import { MainFooter } from './MainFooter';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MainHeader/>
+      <MainNavbar items = {["section 1", "section 2", "section 3"]}/>
+      <MainArcticle/>
+      <MainSideBar/>
+      <MainFooter/>
+    </>
   );
 }
 
